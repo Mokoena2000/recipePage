@@ -1,3 +1,15 @@
 html{
-    background-color: bisque;
+    background-color: white;
+    font-family: "young-serrif";
+    color: hsl(30, 10%, 34%)
+}
+#prep{
+    margin-left: 3%;
+}
+
+.head{
+    color: hsl(332, 51%, 32%)
+}
+.head2, .head3, .head4, .data{
+    color: hsl(14, 45%, 36%);
 }
