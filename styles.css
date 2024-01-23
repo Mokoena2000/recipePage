@@ -3,6 +3,9 @@ html{
     font-family: "young-serrif";
     color: hsl(30, 10%, 34%)
 }
+h1{
+    color:black;
+}
 #prep{
     margin-left: 3%;
 }
@@ -12,4 +15,8 @@ html{
 }
 .head2, .head3, .head4, .data{
     color: hsl(14, 45%, 36%);
+}
+
+footer{
+    text-align: center;
 }
