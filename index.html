@@ -15,12 +15,12 @@
         }
         main{
             background-color: white;
-            border-radius: 1,5%;
+            border-radius: 2%;
             padding: 15px;
             margin: 10%;
         }
         img{
-            border-radius: 1,5%;
+            border-radius: 2%;
             width: 100%
         }
         h1{
@@ -41,6 +41,12 @@
         footer{
             text-align: center;
         }
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto;
+            
+        }
+      
     </style>
 
     <main>
@@ -97,7 +103,17 @@
         <div id="nutri">
             <h2><span class="head4">Nutrition</span></h2>
             <p>The table below shows nutritional values serving without the additional fillings </p>
-           <!--
+           <div class="grid-container">
+            <div class="grid-item">calories</div>
+            <div class="grid-item">277kcal</div>
+            <div class="grid-item">carbs</div>
+            <div class="grid-item">0g</div>
+            <div class="grid-item">protein</div>
+            <div class="grid-item">20g</div>
+            <div class="grid-item">fat</div>
+            <div class="grid-item">22g</div>
+           </div>
+            <!--
             <table>
             <tr>
                 <td>Calories</td>
