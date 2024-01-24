@@ -1,44 +1,59 @@
 <!DOCTYPE html>
-<html lang="eng">
-    <header>
+<html lang="en">
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" width="device-width, initial-scale=1,0">
-    <link rel="stylesheet" src="recipe.css">
+    <link rel="stylesheet" src="styles.css">
     <title>Recipe Page</title>
-       <style>
+    </head>
+    <style>
         html{
-            background-color: white;
+            background-color: hsl(30, 54%, 90%);
             font-family: "young-serrif";
-            color: hsl(30, 10%, 34%)
+            color: hsl(30, 10%, 34%);
+            
+        }
+        main{
+            background-color: white;
+            border-radius: 2%;
+            padding: 15px;
+            margin: 10%;
+        }
+        img{
+            border-radius: 2%;
+            width: 100%
         }
         h1{
             color:black;
         }
         #prep{
             margin-left: 3%;
+            background-color: hsl(330, 100%, 98%);
         }
-
+        
         .head{
             color: hsl(332, 51%, 32%)
         }
-        .head2, .head3, .head4, .data{
+        .head2, .head3, .head4, span{
             color: hsl(14, 45%, 36%);
         }
         
         footer{
             text-align: center;
         }
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto;
         
-        
+            
+        }
+      
     </style>
 
-    </header>
-
- <body>
-    <div class="container-fluid">
-        
-        <div id="image" width="50%">
-            <img src="assets/images/image-omelette.jpeg"
+    <main>
+       
+        <div class="container-fluid">
+           <img src="assets/images/image-omelette.jpeg"
             alt="picture of an amazing omelette">
         </div>
         
@@ -50,7 +65,7 @@
         </div>
 
         <div id="prep">
-            <h3><span class="head">Preparation time</span></h3>
+            <h2><span class="head">Preparation time</span></h2>
              <ul>
                 <li><b>Total</b>: Approximate 10 minutes</li>
                 <li><b>Preparation</b>: 5 minutes</li>
@@ -88,37 +103,21 @@
         <div id="nutri">
             <h2><span class="head4">Nutrition</span></h2>
             <p>The table below shows nutritional values serving without the additional fillings </p>
-           
-            <table>
-            <tr>
-                <td>Calories</td>
-                <td class="data">277kcal</td>
-             </tr>
-
-             <tr>
-                <td>Carbs</td>
-                <td class="data">0g</td>
-             </tr>
-
-             <tr>
-                <td>Protein</td>
-                <td class="data">20g</td>
-             </tr>
-
-             <tr>
-                <td>Fat</td>
-                <td class="data">22g</td>
-             </tr>
-
-           </table>
-        
-           
+           <div class="grid-container">
+            <div class="grid-item">calories</div>
+            <div class="grid-item"><span>277kcal</span></div>
+            <div class="grid-item">carbs</div>
+            <div class="grid-item"><span>0g</span></div>
+            <div class="grid-item">protein</div>
+            <div class="grid-item"><span>20g</span></div>
+            <div class="grid-item">fat</div>
+            <div class="grid-item"><span>22g</span></div>
+           </div>
         </div>
-       
-    </div>
-    </body>
- <footer>
-    Challenge by<a href="https://www.frontendmentor.io/challenges">FrontendMentor</a>. 
-    Coded by<a href="https://www.frontendmentor.io/home">Moholeng Mokoena</a>
- </footer>
+    
+    </main>
+    <footer>
+        Challenge by<a href="https://www.frontendmentor.io/challenges">FrontendMentor</a>. 
+        Coded by<a href="#">Moholeng Mokoena</a>
+     </footer>
 </html>
